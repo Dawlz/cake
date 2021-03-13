@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mercy Ajani | Slideshow </title>
+    <link rel="stylesheet" href="./CSS/index.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="Navbar">
+            <div class="Navbar-brand"> deina's bites </div>
+
+            <div class="Nav-toggle">
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
+
+            <nav class="Nav-items">
+                <li class="Nav-links"><a href="#home">home</a></li>
+                <li class="Nav-links"><a href="#about">about</a></li>
+                <li class="Nav-links"><a href="#shop">shop</a></li>
+                <li class="Nav-links"><a href="#contact">contact</a></li>
+                <li class="Nav-links shop-cart"><a href="#cart-logo"><i class="fas fa-shopping-cart"></i></a></li>
+            </nav>
+        </div>
+
+        <header>
+            <div class="header-content">
+                <h1> Love Goes Through Your Stomach </h1>
+                <p class="grey">
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution
+                    of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                </p>
+                <button class="shop-btn"> place your order </button>
+            </div>
+        </header>
+
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <p> We serve fresh every day. </p>
+            </div>
+
+            <div class="mySlides">
+                <p> Mouthwatering taste, exceptional service. </p>
+            </div>
+
+            <div class="mySlides">
+                <p> They are baked, especially for you. </p>
+            </div>
+
+            <!-- Next/prev buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <section>
+            <div class="section-grid">
+                <img src="https://cdn.pixabay.com/photo/2017/01/11/11/33/cake-1971556_960_720.jpg" alt="">
+            </div>
+            <div class="section-content">
+                <div class="sc-text">
+                    <h2> Make Us Your Plug Today </h2>
+                    <p class="grey">
+                        It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    </p>
+                </div>
+
+            </div>
+            <div class="section-grid">
+                <img src="https://cdn.pixabay.com/photo/2017/05/04/21/23/cupcakes-2285209_960_720.jpg" alt="">
+            </div>
+        </section>
+
+        <!-- Recent Post Wrapper -->
+        <div class="rp-wrapper">
+            <h1> RECENT POST </h1>
+            <div class="recent-post">
+                <div class="post-grid">
+                    <img src="https://cdn.pixabay.com/photo/2016/10/31/18/14/ice-1786311_960_720.jpg" alt="">
+                    <div class="caption">
+                        <h5> Cake by amor </h5>
+                        <hr>
+                        <p class="pricetag">
+                            <strike>$500</strike> $350
+                        </p>
+                    </div>
+                </div>
+                <div class="post-grid">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/22/23/35/birthday-1851191_960_720.jpg" alt="">
+                    <div class="caption">
+                        <h5> Cake by amor </h5>
+                        <hr>
+                        <p class="pricetag">
+                            <strike>$500</strike> $350
+                        </p>
+                    </div>
+                </div>
+                <div class="post-grid">
+                    <img src="https://cdn.pixabay.com/photo/2017/05/04/21/23/cupcakes-2285209_960_720.jpg" alt="">
+                    <div class="caption">
+                        <h5> Cake by amor </h5>
+                        <hr>
+                        <p class="pricetag">
+                            <strike>$500</strike> $350
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="shipping">
+            <div class="ship-grid">
+                <i class="fas fa-store  icons"></i>
+                <p> NEW PICK UP SERVICE </p>
+                <P class="grey"> Get it fresh </P>
+            </div>
+            <div class="ship-grid">
+                <i class="fas fa-truck  icons"></i>
+                <p> FREE DELIVERY </p>
+                <p class="grey"> Delvery to your door step </p>
+            </div>
+            <div class="ship-grid">
+                <i class="fas fa-gift icons "></i>
+                <p> SPECIAL GIFTS WRAPS </p>
+                <p class="grey"> Send a sweet surprice to love ones </p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-grid">
+                <ul>
+                    <li> Mon - Fri: 8AM - 10PM </li>
+                    <li> Sat - Sun: 9AM - 4PM</li>
+                </ul>
+
+                <div class="form">
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email"><br>
+                    <button type="submit"> SUBSCRIBE </button>
+                </div>
+
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li> HOME </li>
+                    <li> BLOG </li>
+                    <li> CAKES </li>
+                    <li> SHOP </li>
+                </ul>
+                <p>
+                    3957 Clearview Drive, Englewood, Colorado 80112 <br> Tel: 303-708-0395
+                </p>
+            </div>
+        </footer>
+        <p class="attribution">
+            Coded by <a href="http://twitter.com/codewithmercy" target="_blank" rel="noopener noreferrer"> Code With Mercy </a>
+        </p>
+    </div>
+
+    <script src="./JS/slideshow.js"></script>
+</body>
+
+</html>

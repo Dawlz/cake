@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Roboto&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 2;
+}
+
+.Navbar {
+  padding: 3% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Navbar-brand{
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: 'Redressed', cursive;
+}
+
+.Nav-toggle {
+  display: none;
+}
+
+.Nav-items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  font-size: 16px;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.Nav-links a{
+  position: relative;
+}
+
+.Nav-links a::after {
+  width: 0;
+  position: absolute;
+  content: '';
+  border-bottom: 2px solid rgb(238, 127, 146);
+  left: 0;
+  top: 0;
+  height: 20px;
+  transition: 0.3s;
+}
+
+.Nav-links a:hover::after{
+  width: 100%;
+}
+.shop-cart {
+  margin: 0 25px;
+  font-size: 20px;
+}
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+header {
+  background-image: url(https://cdn.pixabay.com/photo/2016/09/19/23/31/cakes-1681543_960_720.jpg);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.685);
+  height: 450px;
+  width: 100%;
+}
+
+.header-content {
+  width: 50%;
+  text-align: left;
+  padding: 5%;
+  color: white;
+}
+
+.grey {
+  color: grey;
+}
+
+.shop-btn {
+  text-transform: uppercase;
+  padding: 3% 5%;
+  margin: 5% 0;
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.shop-btn:hover {
+  background-color: pink;
+}
+
+/* Slideshow */
+
+.slideshow-container {
+  position: relative;
+  padding: 0 5%;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 90px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  color: #888;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 5%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 10px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  display: none;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5% 0;
+}
+
+.section-content {
+  padding: 0 5%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  height: 96%;
+}
+
+.sc-text {
+  margin: 15% 0;
+}
+
+.recent-post {
+  padding: 5% 10%;
+  display: flex;
+  gap: 5%;
+}
+
+.rp-wrapper h1 {
+  text-align: center;
+  position: relative;
+}
+
+.rp-wrapper h1::after {
+  content: '';
+  width: 40%;
+  height: 30px;
+  border-bottom: 2px solid grey;
+  position: absolute;
+  margin: 0 1%;
+}
+
+.rp-wrapper h1::before {
+  content: '';
+  width: 40%;
+  height: 30px;
+  border-bottom: 2px solid grey;
+  position: absolute;
+  margin: 0 1%;
+  left: 0;
+}
+
+.pricetag {
+  text-align: right;
+  color: grey;
+}
+
+.shipping {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5%;
+  padding: 5% 10%;
+  text-align: center;
+  position: relative;
+  line-height: 25px;
+  align-items: center;
+}
+
+.ship-grid {
+  position: relative;
+}
+
+.ship-grid:nth-child(1)::after,.ship-grid:nth-child(2)::after{
+  content: '';
+  width: 100%;
+  height: 120px;
+  border-right: 2px solid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: grey;
+}
+
+.icons {
+  font-size: 40px;
+  padding: 5% 0;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5% 10%;
+  background-color: black;
+  color: white;
+}
+
+.footer-nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+input {
+  border: 0;
+  border-radius: 15px;
+  padding: 2% 5%;
+  margin: 3% 0;
+  width: 70%;
+  cursor: text;
+}
+
+.form button {
+  width: 70%;
+  border-radius: 20px;
+  padding: 2% 0;
+  border: 0;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 700
+}
+
+.form button:hover {
+  background-color: pink;
+}
+
+input:focus {
+  outline: 0;
+}
+
+.attribution {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.attribution a {
+  color: pink;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  .Nav-items,
+    .Navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Navbar {
+    padding: 0 10%;
+  }
+
+  .Nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5% 0;
+    display: none;
+  }
+
+  .Nav-links {
+    padding: 10px 0;
+    display: blocks;
+  }
+
+  .Nav-toggle {
+    top: 20px;
+    display: initial;
+    position: absolute;
+    align-self: flex-end;
+  }
+
+  .Nav-toggleShow {
+    display: flex;
+  }
+
+  .shop-cart {
+    margin: 0;
+  }
+
+  header {
+    height: auto;
+  }
+
+  .header-content {
+    text-align: center;
+    width: 100vw;
+    padding: 10%;
+  }
+
+  .header-content p {
+    font-size: 14px;
+    padding: 0 10%;
+    width: 100%;
+  }
+
+  .slideshow-container {
+    padding: 0 10%;
+  }
+
+ .prev, .next {
+    right: 10%;
+    display: none;
+  }  
+
+  .mySlides {
+    font-size: 15px;
+    padding: 10% 5%;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .recent-post {
+    flex-direction: column;
+  }
+
+  .rp-wrapper h1 {
+    font-size: 1rem;
+  }
+
+  .rp-wrapper h1::after {
+    height: 15px;
+    width: 32%;
+  } 
+
+  .rp-wrapper h1::before {
+    height: 15px;
+    width: 32%;
+  }
+
+  .post-grid {
+    padding: 5% 0;
+  }
+
+  .shipping {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ship-grid {
+    padding: 10% 0;
+  }
+
+  .ship-grid::after {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10%;
+    text-align: center;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input, .form button {
+    width: 100%;
+    padding: 5% 5%;
+  }
+
+  .footer-nav {
+    padding: 10% 0;
+  }
+
+  .footer-nav p {
+    padding-top: 10%;
+  } 
+}
